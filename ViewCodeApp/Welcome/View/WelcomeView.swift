@@ -9,7 +9,8 @@
 import UIKit
 
 protocol WelcomeViewDelegate: AnyObject {
-    
+    func loginButtonTapped(withPhone: String)
+    func signUpButtonTapped()
 }
 
 class WelcomeView: UIView, CodeView {
@@ -160,7 +161,20 @@ class WelcomeView: UIView, CodeView {
     }
     
     func setupExtraConfigurations() {
-        //
+        backgroundColor = .view
+        buttonLogin.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        buttonSignUp.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+    }
+    
+    @objc private func buttonTapped(sender: UIButton) {
+        switch sender {
+        case buttonLogin:
+            delegate?.loginButtonTapped(withPhone: textFieldPhone.text!)
+        case buttonSignUp:
+            delegate?.signUpButtonTapped()
+        default:
+            break
+        }
     }
 
 }
