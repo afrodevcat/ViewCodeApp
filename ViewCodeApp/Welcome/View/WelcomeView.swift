@@ -80,16 +80,8 @@ class WelcomeView: UIView, CodeView {
         return stackView
     }()
     
-    let buttonLogin: UIButton = {
-        let button = UIButton(frame: .zero)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .mainButton
-        button.setTitleColor(.mainButtonText, for: .normal)
-        button.setTitle("Entrar", for: .normal)
-        button.titleLabel?.font = .button
-        button.layer.cornerRadius = 25
-        return button
-    }()
+    let buttonLogin = WelcomeButton(style: .main, title: "Entrar")
+    let buttonSignUp = WelcomeButton(style: .secondary, title: "Registrar")
     
     // MARK: - Constructors
     init(delegate: WelcomeViewDelegate) {
@@ -112,6 +104,7 @@ class WelcomeView: UIView, CodeView {
         contentView.addSubview(textFieldPhone)
         contentView.addSubview(stackViewButtons)
         stackViewButtons.addArrangedSubview(buttonLogin)
+        stackViewButtons.addArrangedSubview(buttonSignUp)
     }
     
     func setupConstraints() {
@@ -161,6 +154,9 @@ class WelcomeView: UIView, CodeView {
         //ButtonLogin
         buttonLogin.widthAnchor.constraint(equalToConstant: 120).isActive = true
         buttonLogin.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        //ButtonSignUp
+        buttonSignUp.heightAnchor.constraint(equalTo: buttonLogin.heightAnchor).isActive = true
     }
     
     func setupExtraConfigurations() {

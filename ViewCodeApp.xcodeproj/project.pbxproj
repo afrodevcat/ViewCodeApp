@@ -14,6 +14,7 @@
 		22832AC42565D85C002772FA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AC32565D85C002772FA /* WelcomeView.swift */; };
 		22832AC82565DFE1002772FA /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AC72565DFE1002772FA /* CodeView.swift */; };
 		22832ACA2565F352002772FA /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AC92565F352002772FA /* AppStyle.swift */; };
+		22EF4F4C25672588005CDAC6 /* WelcomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF4F4B25672588005CDAC6 /* WelcomeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		22832AC32565D85C002772FA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		22832AC72565DFE1002772FA /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		22832AC92565F352002772FA /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		22EF4F4B25672588005CDAC6 /* WelcomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				22832AAC2565D52B002772FA /* AppDelegate.swift */,
 				22832AC02565D73C002772FA /* Welcome */,
 				22832AC52565DFB0002772FA /* Shared */,
+				22EF4F4A25672548005CDAC6 /* Components */,
 				22832AB52565D52D002772FA /* Assets.xcassets */,
 				22832AB72565D52D002772FA /* LaunchScreen.storyboard */,
 				22832ABA2565D52D002772FA /* Info.plist */,
@@ -108,6 +111,14 @@
 				22832AC72565DFE1002772FA /* CodeView.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		22EF4F4A25672548005CDAC6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				22EF4F4B25672588005CDAC6 /* WelcomeButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			files = (
 				22832AB12565D52B002772FA /* WelcomeViewController.swift in Sources */,
 				22832ACA2565F352002772FA /* AppStyle.swift in Sources */,
+				22EF4F4C25672588005CDAC6 /* WelcomeButton.swift in Sources */,
 				22832AC42565D85C002772FA /* WelcomeView.swift in Sources */,
 				22832AAD2565D52B002772FA /* AppDelegate.swift in Sources */,
 				22832AC82565DFE1002772FA /* CodeView.swift in Sources */,
