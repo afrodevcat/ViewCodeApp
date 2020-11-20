@@ -17,6 +17,7 @@
 		22EF4F4C25672588005CDAC6 /* WelcomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF4F4B25672588005CDAC6 /* WelcomeButton.swift */; };
 		22EF4F5125673F20005CDAC6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22EF4F5325673F20005CDAC6 /* Localizable.strings */; };
 		22EF4F5825674179005CDAC6 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF4F5725674179005CDAC6 /* Localization.swift */; };
+		22EF4F5A2567450F005CDAC6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF4F592567450F005CDAC6 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		22EF4F5425673F33005CDAC6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		22EF4F5525673F37005CDAC6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		22EF4F5725674179005CDAC6 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		22EF4F592567450F005CDAC6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				22832AB02565D52B002772FA /* WelcomeViewController.swift */,
+				22EF4F592567450F005CDAC6 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				22832AB12565D52B002772FA /* WelcomeViewController.swift in Sources */,
 				22832ACA2565F352002772FA /* AppStyle.swift in Sources */,
+				22EF4F5A2567450F005CDAC6 /* SignUpViewController.swift in Sources */,
 				22EF4F5825674179005CDAC6 /* Localization.swift in Sources */,
 				22EF4F4C25672588005CDAC6 /* WelcomeButton.swift in Sources */,
 				22832AC42565D85C002772FA /* WelcomeView.swift in Sources */,

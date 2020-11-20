@@ -1,15 +1,15 @@
 //
-//  WelcomeViewController.swift
+//  SignUpViewController.swift
 //  ViewCodeApp
 //
-//  Created by Eric Alves Brito on 18/11/20.
+//  Created by Eric Alves Brito on 19/11/20.
 //  Copyright © 2020 Afrodev. All rights reserved.
 //
 
 import UIKit
 
-final class WelcomeViewController: UIViewController {
-    
+final class SignUpViewController: UIViewController {
+
     // MARK: - Properties
     var customView: WelcomeView {
         view as! WelcomeView
@@ -22,6 +22,7 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,17 +49,16 @@ final class WelcomeViewController: UIViewController {
         customView.scrollView.contentInset.bottom = 0
         customView.scrollView.verticalScrollIndicatorInsets.bottom = 0
     }
+
 }
 
-extension WelcomeViewController: WelcomeViewDelegate {
+extension SignUpViewController: WelcomeViewDelegate {
     func loginButtonTapped(withPhone: String) {
         print("Estou entrando no processo de login com o telefone \(withPhone)")
     }
     
     func signUpButtonTapped() {
-        let signUpViewController = SignUpViewController()
-        navigationController?.pushViewController(signUpViewController, animated: true)
-        //present(signUpViewController, animated: true, completion: nil)
+        print("Vou abrir a tela de criação de conta!!")
     }
     
     
