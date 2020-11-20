@@ -42,7 +42,7 @@ class WelcomeView: UIView, CodeView {
     let labelTitle: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Bem-Vindo"
+        label.text = Localization.welcome
         label.numberOfLines = 0
         label.textAlignment = .center
         label.textColor = .title
@@ -53,7 +53,7 @@ class WelcomeView: UIView, CodeView {
     let labelBody: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Vamos treinar? Aqui você encontra o seu treino perfeito!"
+        label.text = Localization.main
         label.numberOfLines = 0
         label.textAlignment = .center
         label.textColor = .body
@@ -64,7 +64,7 @@ class WelcomeView: UIView, CodeView {
     let textFieldPhone: UITextField = {
         let textField = UITextField(frame: .zero)
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.placeholder = "Telefone"
+        textField.placeholder = Localization.phone
         textField.borderStyle = .roundedRect
         textField.keyboardType = .phonePad
         textField.textAlignment = .center
@@ -81,8 +81,8 @@ class WelcomeView: UIView, CodeView {
         return stackView
     }()
     
-    let buttonLogin = WelcomeButton(style: .main, title: "Entrar")
-    let buttonSignUp = WelcomeButton(style: .secondary, title: "Registrar")
+    let buttonLogin = WelcomeButton(style: .main, title: Localization.loginButton)
+    let buttonSignUp = WelcomeButton(style: .secondary, title: Localization.signupButton)
     
     // MARK: - Constructors
     init(delegate: WelcomeViewDelegate) {

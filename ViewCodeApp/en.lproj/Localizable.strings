@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ViewCodeApp
+
+  Created by Eric Alves Brito on 19/11/20.
+  Copyright © 2020 Afrodev. All rights reserved.
+*/
+"WELCOME" = "Welcome!";
+"MAIN" = "Let's workout? Here you can create the perfect trainning!";
+"PHONE" = "Phone";
+"LOGIN_BUTTON" = "Login";
+"SIGNUP_BUTTON" = "Sign Up";
