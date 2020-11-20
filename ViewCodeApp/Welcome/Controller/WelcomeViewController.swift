@@ -57,9 +57,18 @@ extension WelcomeViewController: WelcomeViewDelegate {
     
     func signUpButtonTapped() {
         let signUpViewController = SignUpViewController()
+        
+        //Exemplo de como passar objetos para a outra tela
+        signUpViewController.person = Person(name: "Heider")
+        
         navigationController?.pushViewController(signUpViewController, animated: true)
         //present(signUpViewController, animated: true, completion: nil)
     }
     
     
+}
+
+
+struct Person {
+    var name: String
 }

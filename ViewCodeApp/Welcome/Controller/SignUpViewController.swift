@@ -14,6 +14,7 @@ final class SignUpViewController: UIViewController {
     var customView: WelcomeView {
         view as! WelcomeView
     }
+    var person: Person?
 
     // MARK: - Super Methods
     override func loadView() {
@@ -23,6 +24,9 @@ final class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+        if let person = person {
+            print("A tela anterior me mandou o \(person.name)")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
